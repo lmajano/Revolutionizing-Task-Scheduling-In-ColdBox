@@ -44,7 +44,10 @@ component {
 	}
 
 	public void function onSessionStart() {
-		application.cbBootStrap.onSessionStart();
+		// if bootstrap doesn't exist, skip
+		if ( !isNull( application.bootstrap ) ) {
+			application.cbBootstrap.onSessionStart();
+		}
 	}
 
 	public void function onSessionEnd( struct sessionScope, struct appScope ) {
