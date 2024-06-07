@@ -9,7 +9,7 @@
         "commandbox-cfformat":"*"
     },
     "dependencies":{
-        "coldbox":"be",
+        "coldbox":"^7",
         "route-visualizer":"^2.2.0+1",
         "scheduled-task-manager":"^1.1.1"
     },
