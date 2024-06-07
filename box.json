@@ -15,5 +15,13 @@
     },
     "installPaths":{
         "coldbox":"coldbox/"
+    },
+    "scripts" : {
+        "start:boxlang" : "server start serverConfigFile=server-boxlang.json --debug",
+        "start:acf" : "server start serverConfigFile=server-acf.json --debug",
+        "start:lucee" : "server start serverConfigFile=server-lucee.json --debug",
+        "logs:boxlang" : "server log serverConfigFile=server-boxlang.json --follow",
+        "logs:acf" : "server log serverConfigFile=server-acf.json --follow",
+        "logs:lucee" : "server log serverConfigFile=server-lucee.json --follow"
     }
 }
